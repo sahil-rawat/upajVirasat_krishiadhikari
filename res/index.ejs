@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.1/tailwind.min.css'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel="stylesheet" href="assets/css/nav.css">
+<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+<link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="assets/css/drop.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  
+  <nav>
+    <lable class="logo"><a href="/index" style="color: black;">Kisan Seva Adhikari</a></lable>
+    <ul>
+      <li><a id="up" class="active" href="javascript:void(0);" onclick="update()">Updates</a></li>
+      <li><a id="ad" href="javascript:void(0);" onclick="adddata()">Add Data</a></li>
+      <li><a id="com" href="javascript:void(0);" onclick="compensation()">Emergency Compensation</a></li>
+      <div class="dropDown">
+        <li><a href="#">Hello <%= user %></a></li>
+        <div class="dropDown-content">
+          <li class="dropItem"><a href="javascript:void(0)" onclick="signOut()">Logout</a></li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+
+
+
+  <div id="update">
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(https://state.bihar.gov.in/krishi/cache/29/NEWS_IMAGES/letter-format%20-%20Copy.png)"></div>
+        
+      </div>
+      <div class="description">
+        <h1></h1>
+        <h2>Regarding the compliance of transfer / posting orders in June 2020.</h2>
+        <p class="read-more">
+          <a href="https://state.bihar.gov.in/krishi/cache/29/02-Aug-20/SHOW_DOCS/138_Letter070720201735.pdf">Know More</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(https://images.unsplash.com/photo-1595079676714-d804bc1095b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)"></div>
+              </div>
+      <div class="description">
+        <h1></h1>
+        <h2>Regarding the use of Digital / Cashless Payment optionally by vendors at all fertilizer sales centers in the state.</h2>
+        <p class="read-more">
+          <a href="https://state.bihar.gov.in/krishi/cache/29/02-Aug-20/SHOW_DOCS/397_Letter070720201715.pdf">Know More</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card ">
+      <div class="meta">
+        <div class="photo" style="background-image: url(https://images.unsplash.com/photo-1529511582893-2d7e684dd128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)"></div>
+              </div>
+      <div class="description">
+        <h1></h1>
+        <h2>Under the Kisan Advisory Scheme, in the honorarium of farmers advisers, in the honorarium of Rs. 8000 / - per month with effect from 01.04.2017 to 12000 / - and acceptance of implementation for this scheme for farmers advisory scheme.</h2>
+        <p class="read-more">
+          <a href="https://state.bihar.gov.in/krishi/cache/29/02-Aug-20/SHOW_DOCS/4%20-%202018_02_16_03_35_10_PM_5585.pdf">Know More</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(https://images.unsplash.com/photo-1557234195-bd9f290f0e4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80)"></div>
+              </div>
+      <div class="description">
+        <h1></h1>
+        <h2>  Sanction of establishment of agricultural office at panchayat level in all districts of the state and clearance of total expenditure of Rs 1410.48 lakh in the current financial year 2020-21.
+        </h2>
+        <p class="read-more">
+          <a href="https://state.bihar.gov.in/krishi/cache/29/02-Aug-20/SHOW_DOCS/18_Letter070720201611.pdf">Know More</a>
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+  <div id="adddata" style="display:none">
+    <div id="progress"></div>
+      <div class="center">
+        
+        <div id="register">
+          <i id="backButton" class="ion-android-arrow-back back"></i>
+          <i id="progressButton" class="ion-android-arrow-forward next"></i>
+          <div id="inputContainer">
+            <input id="inputField" required autofocus />
+            <label id="inputLabel"></label>
+            <div id="inputProgress" style="width: 100%;border-top-width: 0px;border-top-style: solid;margin-top: 20px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+  <div id="comp" style="display:none;padding: 175px;padding-left: 450px;">
+    <div  class="dropdown" >
+    <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+    <label for="filter-switch" class="dropdown__options-filter">
+      <ul class="dropdown__filter" role="listbox" tabindex="-1">
+        <li id="sel" class="dropdown__filter-selected" aria-selected="true">
+          Heavy Rainfall
+        </li>
+        <li>
+          <ul class="dropdown__select">
+            <li class="dropdown__select-option" role="option">
+              Flood
+            </li>
+            <li class="dropdown__select-option" role="option">
+              Drought
+            </li>
+            <li class="dropdown__select-option" role="option">
+              Pest Attack
+            </li>
+            
+            <li class="dropdown__select-option" role="option">
+              Unprecedented Circumstances
+            </li>
+            
+          </ul>
+        </li>
+      </ul>			
+    </label>
+    
+  </div>
+  <button onclick="compdata()" class="myButton" style="margin-left: 200px;margin-top: 50px;">Record Emergency</button>
+  
+  </div>
+
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script  src="assets/js/form.js"></script>
+  <script src="assets/js/index_page.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/drop.js"></script>
+</body>
+</html>

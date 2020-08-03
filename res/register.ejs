@@ -1,0 +1,153 @@
+<!--TO be done-->
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- amchart css -->
+    <!-- others css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- login area start -->
+    <div class="login-area login-s2">
+        <div class="container">
+            <div class="login-box ptb--100">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="login-form-head">
+                        <h4>Sign up</h4>
+                            <p>Hello there, Sign up and Join with Us</p>
+                    </div>
+                    <div class="login-form-body">
+                        <div class="form-gp">
+                            <label for="exampleInputName1">Full Name</label>
+                            <input type="text" id="exampleInputName1" name="username" required>
+                            <i class="ti-user" ></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputaadhar1">Aadhar No.</label>
+                            <input type="number" id="exampleInputaadhar1" pattern="[1-9]{1}[0-9]{9}" name="aadhar" required>
+                            <i class="ti-id-badge" ></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputstate1">State</label>
+                            <input type="text" id="exampleInputstate1" name="state" required>
+                            <i class="ti-map-alt" ></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputdistrict1">District</label>
+                            <input type="text" id="exampleInputdistrict1" name="district" required>
+                            <i class="ti-map-alt" ></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputvillage1">Village</label>
+                            <input type="text" id="exampleInputvillage1" name="village" required>
+                            <i class="ti-home" ></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" id="exampleInputEmail1" name="email" required>
+                            <i class="ti-email"></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputphone1">Phone No.</label>
+                            <input type="phone" id="exampleInputphone1" name="phone" required>
+                            <i class="ti-mobile"></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" id="exampleInputPassword1" name="password" required>
+                            <i class="ti-lock"></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="form-gp">
+                            <label for="exampleInputPassword2">Confirm Password</label>
+                            <input type="password" id="exampleInputPassword2" required>
+                            <i class="ti-lock"></i>
+                            <div class="text-danger"></div>
+                        </div>
+                        <br>
+                        <div class="submit-btn-area">
+                            <button class="button" id="form_submit" onclick="signup()">
+                                <span class="submit">Submit</span>
+                                <span class="loading"><i class="fa fa-refresh"></i></span>
+                                <span class="check"><i class="fa fa-check"></i></span>
+                            
+                            </button>
+                            <div class="login-other row mt-4">
+                            
+                                
+                            </div>
+                        </div>
+                        <div class="form-footer text-center mt-5">
+                            <p class="text-muted">Have an account? <a href="/">Sign in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+ 
+    <script src="assets/js/auth.js"></script>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    
+</body>
+
+</html>

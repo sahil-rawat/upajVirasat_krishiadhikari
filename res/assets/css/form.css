@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background:#dcedc8;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  position: relative;
+  color: black;
+  opacity: 0;
+  transition: .8s ease-in-out;
+}
+
+
+.myButton {
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:10px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#progress {
+  position: absolute;
+  background: #AED581;
+  height: 100vh;
+  width: 0;
+  transition: width 0.2s ease-in-out;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******
+  Form
+ ******/
+
+#register {
+  background: #fff;
+  position: relative;
+  width: 460px;
+  height: 100px;
+  padding: 2px 15px 20px 15px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  transition: transform .1s ease-in-out;
+}
+
+#register.close {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: .8s ease-in-out;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0);
+}
+
+.next {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 40px;
+  color: #25a3ff;
+  float: right;
+  cursor: pointer;
+}
+.next:hover {color: #333}
+.wrong .next {color: #ff2d26}
+.close .next {color: #fff}
+
+.back {
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  color: #25a3ff;
+  float: right;
+  cursor: pointer;
+}
+.back:hover {color: #333}
+
+#inputContainer {
+  position: relative;
+  opacity: 0;
+  width: 350px;
+  margin-top: 25px;
+  transition: opacity .3s ease-in-out;
+}
+
+#inputContainer input {
+  width: 100%;
+  padding: 0 5px;
+  border: none;
+  padding-left: 50px;
+
+  font-size: 20px;
+  font-weight: bold;
+  outline: 0;
+  background: transparent;
+  box-shadow:none;
+}
+
+#inputLabel {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 5px;
+  padding-left: 50px;
+  transition: .2s ease-in-out;
+}
+
+#inputContainer input:valid + #inputLabel {
+  top: -15px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #9e9e9e;
+}
+
+#inputProgress {
+  position: absolute;
+  border-bottom: 2px solid #25a3ff;
+  padding: 3px 0;
+  width: 0;
+  transition: width .6s ease-in-out;
+  
+}
+
+.wrong #inputProgress {
+  border-color: #ff2d26;
+}
